@@ -22,7 +22,7 @@
   background-color: #eee;
 }
 
-.shadowedElement {
+.shadowed-element {
   box-shadow: 0px 0px 5px 3px yellow
 }
 
@@ -51,4 +51,45 @@
 .shadowed-circle {
   box-shadow: 0 0 3px 3px #ff1111; 
   transition: box-shadow 0.5s;
+}
+
+.progress-element-wrapper {
+  display: block;
+  width: 100%;
+  height: 25px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 100px;
+  background-color: #fff;
+}
+
+.progress-element {
+  display: block;
+  height: 23px;
+  background-color: #4db8ff;
+  margin: 1px;
+  border-radius: 3px;
+}
+
+.start-progress {
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  border: 2px solid orange;
+  margin: 10px 0;
+}
+
+.stop-progress {
+  display: inline-block;
+  width: 150px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: red;
+  color: white;
+  border: 2px solid orange;
+  margin: 10px 0;
 }

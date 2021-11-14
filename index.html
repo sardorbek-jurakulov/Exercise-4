@@ -17,7 +17,7 @@
   <br>
   <div>
     <button @click="startEffect">Start Effect</button>
-    <div id="effect" :class="hightlightShrink"></div>
+    <div id="effect" :class="effectClasses"></div>
   </div>
 
   <br>
@@ -27,7 +27,7 @@
   <!-- 2) Create a couple of CSS classes and attach them via the array syntax -->
   <p>second task</p>
   <br>
-  <div :class="[borderedElement, shadowedElement]">I got no class :(</div>
+  <div :class="[borderedElement, 'shadowed-element']">I got no class :(</div>
 
   <br>
   <br>
@@ -86,8 +86,11 @@
   <p>sixth task</p>
   <br>
   <div>
-    <button>Start Progress</button>
-    <div></div>
+    <button class="start-progress" @click="progressStarted">Start Progress</button>
+    <button class="stop-progress" @click="progressStarted">Stop Progress</button>
+    <div class="progress-element-wrapper">
+      <div class="progress-element" :style="{'width': progressPersentage+'%' }"></div>
+    </div>
   </div>
 </div>
 <script src="./scripts/app.js"></script>
