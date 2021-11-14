@@ -32,9 +32,9 @@
 
   <!-- 4) Let the user enter a class and enter true/ false for another class (create some example classes) and attach the classes -->
   <div>
-    <input type="text">
-    <input type="text">
-    <div></div>
+    <input type="text" placeholder="circled-element" v-model="circledElement">
+    <input type="text" placeholder="true / false" v-model="isShadowedCircle">
+    <div class="demo" :class="[circledElement, {'shadowed-circle': shadowedCircle}]"></div>
   </div>
 
 

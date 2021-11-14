@@ -4,7 +4,9 @@ new Vue({
     attachedHighlight: true,
     borderedElement: 'borderedElement',
     shadowedElement: 'shadowedElement',
-    userClass: ''
+    userClass: '',
+    circledElement: '',
+    isShadowedCircle: ''
   },
   computed: {
     hightlightShrink: function() {
@@ -12,6 +14,9 @@ new Vue({
         highlight: this.attachedHighlight,
         shrink: !this.attachedHighlight
       }
+    },
+    shadowedCircle: function() {
+      return (this.isShadowedCircle == 'true') ? true : false;
     }
   },
   methods: {
