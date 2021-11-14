@@ -6,7 +6,8 @@ new Vue({
     shadowedElement: 'shadowedElement',
     userClass: '',
     circledElement: '',
-    isShadowedCircle: ''
+    isShadowedCircle: '',
+    userInputStyle: 'gray'
   },
   computed: {
     hightlightShrink: function() {

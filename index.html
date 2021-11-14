@@ -13,39 +13,78 @@
 
 
   <!-- 1) Start the Effect with the Button. The Effect should alternate the "highlight" or "shrink" class on each new setInterval tick (attach respective class to the div with id "effect" below) -->
+  <p>first task</p>
+  <br>
   <div>
     <button @click="startEffect">Start Effect</button>
     <div id="effect" :class="hightlightShrink"></div>
   </div>
 
+  <br>
+  <br>
+  <hr>
 
   <!-- 2) Create a couple of CSS classes and attach them via the array syntax -->
+  <p>second task</p>
+  <br>
   <div :class="[borderedElement, shadowedElement]">I got no class :(</div>
 
+  <br>
+  <br>
+  <hr>
 
   <!-- 3) Let the user enter a class (create some example classes) and attach it -->
+  <p>third task</p>
+  <br>
   <div>
-    <input type="text" v-model="userClass">
+    <label for="userClass">Enter to input: <i>customClass</i></label>
+    <input id="userClass" type="text" v-model="userClass">
     <div class="demo" :class="userClass"></div>
   </div>
 
+  <br>
+  <br>
+  <hr>
 
   <!-- 4) Let the user enter a class and enter true/ false for another class (create some example classes) and attach the classes -->
-  <div>
-    <input type="text" placeholder="circled-element" v-model="circledElement">
-    <input type="text" placeholder="true / false" v-model="isShadowedCircle">
+  <p>fourth task</p>
+  <br>
+  <div style="display:flex; align-items: center;">
+    <div>
+      <div>
+        <label for="shapeChanger">Rectangle to Circle: </label>
+        <input id="shapeChanger" type="text" placeholder="circled-element" v-model="circledElement">
+        <br>
+        <br>
+        <div>
+          <label for="shadowChanger">Shadow switcher: </label>
+          <input id="shadowChanger" type="text" placeholder="true / false" v-model="isShadowedCircle">
+        </div>
+      </div>
+    </div>
     <div class="demo" :class="[circledElement, {'shadowed-circle': shadowedCircle}]"></div>
   </div>
 
+  <br>
+  <br>
+  <hr>
 
   <!-- 5) Repeat 3) but now with values for styles (instead of class names). Attach the respective styles.  -->
+  <p>fifth task</p>
+  <br>
   <div>
-    <input type="text">
-    <div></div>
+    <label for="userInputStyle">Enter bellow box's background color!: </label>
+    <input id="userInputStyle" type="text" v-model="userInputStyle">
+    <div class="demo" :style="{'background-color': userInputStyle}"></div>
   </div>
 
+  <br>
+  <br>
+  <hr>
 
   <!-- 6) Create a simple progress bar with setInterval and style bindings. Start it by hitting the below button. -->
+  <p>sixth task</p>
+  <br>
   <div>
     <button>Start Progress</button>
     <div></div>
