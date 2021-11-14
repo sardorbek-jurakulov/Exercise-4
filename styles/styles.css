@@ -13,3 +13,29 @@
   background-color: gray;
   width: 50px !important;
 }
+
+.borderedElement {
+  margin: 15px;
+  display: inline-block;
+  border: 5px solid #aaa;
+  border-radius: 5px;
+  background-color: #eee;
+}
+
+.shadowedElement {
+  box-shadow: 0px 0px 5px 3px yellow
+}
+
+.demo {
+  display: block;
+  margin: 10px 0;
+  width: 100px;
+  height: 100px;
+  background-color: #aaa;
+}
+
+.customClass {
+  width: 100%;
+  background-color: #acc;
+  transition: width 2s, background-color 2s;
+}
